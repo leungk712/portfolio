@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --color--smaltblue: #537d91; 
+    --color--white: #fff;
+    --align-center: center;
+    --h1-resize: 2.5rem;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #333;
+}
+
+/* ==================
+        Header
+   ================== */ 
+
+header {
+    height: 6vh;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.header-grid {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.header-grid nav ul {
+    list-style: none;
+}
+
+.header-grid nav li {
+    padding: 0 1rem;
+    display: inline-block;
+}
+
+.header-grid nav li:hover {
+    padding-bottom: .5rem;
+    border-bottom: 3px solid var(--color--white);
+    color: var(--color--smaltblue);
+}
+
+.header-grid nav li a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: var(--color-white);
+}
+
+/* ==================
+    Slanted Container 
+   ================== */ 
+
+.slanted-container {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #537d91;
+}
+
+.slanted-container:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform-origin: top left;
+    transform: skewY(1.6deg);
+    z-index: -1;
+}
+
+.info-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color--white);
+}
+
+.info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
+    animation-name: displayName;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.info-header h1 {
+    font-size: 6rem;
+}
+
+.info-header p {
+    font-size: 2rem;
+}
+
+.info-header ul {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.info-header ul li {
+    list-style: none;
+}
+
+.info-header ul li:nth-child(2) {
+    padding: 0 2.5rem;
+}
+
+.info-header ul li a {
+    text-decoration: none;
+    padding: 0rem;
+    color: var(--color--white);
+    font-size: 1.25rem;
+}
+
+.info-header ul li a:hover {
+    border-bottom: 3px solid var(--color--white);
+}
+
+/* Animation */ 
+
+@keyframes displayName {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ==================
+    Skills Section
+   ================== */ 
+
+.skills {
+    margin-top: 60px;
+    text-align: var(--align-center);
+    color: var(--color--white);
+}
+
+.skills h1 {
+    font-size: var(--h1-resize);
+}
+
+.skills .code-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-top: 30px;
+}
+
+.icon-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.icon-box {
+    border: 2px solid #fff;
+}
+
+.icon-box:hover {
+    transform: scale(1.05);
+}
+
+.icon-box i {
+    font-size: 4rem;
+}
+
+.icon-box-content {
+    padding: 1.5rem;
+}
+
+.icon-box-content p {
+    font-weight: bold;
+}
+
+.icon-box-content i {
+    margin-top: 1rem;
+}
+
+/* ==================
+    Projects Section
+   ================== */ 
+
+.portfolio {
+    margin-top: 40px;
+    text-align: var(--align-center);
+    color: var(--color--white);
+}
+
+.portfolio h1 {
+    font-size: var(--h1-resize);
+}
+
+/* ==================
+    Font Awesome Icons
+   ================== */ 
+
+.fa-code {
+    color: #E54D26;
+}
+
+.fa-css3-alt {
+    color: #379AD5;
+}
+
+.fa-js {
+    color: #F99D36;
+}
+
+.fa-bootstrap {
+    color: #563D7C;
+}
+
+.fa-node {
+    color: #72A761;
+}
+
+.fa-git-square {
+    color: #f05033;
+}
+
+.fa-react {
+    color: #61DAFB;
+}
+
+.fa-npm {
+    color: #cb3e3d;
+}
+
+.fa-linkedin {
+    color: #0077B5;
+}
+
+.fa-github-alt {
+    color: #000;
+}
+
+.fa-youtube {
+    color: #c4302b;
+}
+
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+/* ==================
+    Media Queries
+   ================== */ 
+
+@media (max-width: 768px) {
+    .header-grid nav li a {
+        font-size: 1rem;
+    }
+
+    .info-header h1 {
+        font-size: 4rem;
+    }
+    
+    .info-header p {
+        font-size: 1.25rem;
+    }
+
+    .skills .code-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px;
+        margin-top: 30px;
+    }
+
+    .icon-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
