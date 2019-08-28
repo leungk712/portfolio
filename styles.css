@@ -96,12 +96,12 @@ header {
     color: var(--color--white);
 }
 
-.info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
+/* .info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
     animation-name: displayName;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
-}
+} */
 
 .info-header h1 {
     font-size: 6rem;
@@ -186,6 +186,8 @@ header {
 
 .icon-box {
     border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
 }
 
 .icon-box:hover {
@@ -221,6 +223,50 @@ header {
 
 .portfolio h1 {
     font-size: var(--h1-resize);
+}
+
+.portfolio-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.portfolio-rows {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* ==================
+    Education Section
+   ================== */ 
+
+.education-container {
+    width: 75%;
+    margin: 30px auto;
+    color: var(--color--white);
+}
+
+.education-container h1 {
+    text-align: var(--align-center);
+    margin-bottom: 1rem;
+}
+
+.education-container ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+/* ==================
+    Footer Section
+   ================== */ 
+
+footer {
+    text-align: var(--align-center);
+    height: 6vh;
+    color: var(--color--white);
+}
+
+footer p {
+    margin-top: 1rem;
 }
 
 /* ==================
