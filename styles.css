@@ -123,7 +123,7 @@ header {
 }
 
 .info-header ul li:nth-child(2) {
-    padding: 0 2.5rem;
+    padding: 0 2rem;
 }
 
 .info-header ul li a {
@@ -135,6 +135,10 @@ header {
 
 .info-header ul li a:hover {
     border-bottom: 3px solid var(--color--white);
+}
+
+.info-header .mobile-bar-links {
+    display: none;
 }
 
 /* Animation */ 
@@ -212,6 +216,7 @@ header {
     margin-top: 40px;
     text-align: var(--align-center);
     color: var(--color--white);
+    background-color: var(--color--smaltblue);
 }
 
 .portfolio h1 {
@@ -266,11 +271,6 @@ header {
     color: #c4302b;
 }
 
-.swiper-container {
-    width: 600px;
-    height: 300px;
-}
-
 /* ==================
     Media Queries
    ================== */ 
@@ -286,6 +286,26 @@ header {
     
     .info-header p {
         font-size: 1.25rem;
+    }
+
+    .info-header .fullscreen-bar-links {
+        display: none;
+    }
+
+    .info-header .mobile-bar-links {
+        display: flex;
+    }
+
+    .info-header ul li:nth-child(2) {
+        padding: 0 0.5rem;
+    }
+
+    .info-header .mobile-bar-links a {
+        font-size: 2rem;
+    }
+
+    .info-header ul li a:hover {
+        border-bottom: none;
     }
 
     .skills .code-icons {
