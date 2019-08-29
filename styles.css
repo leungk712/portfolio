@@ -11,13 +11,14 @@
 :root {
     --color--smaltblue: #537d91; 
     --color--white: #fff;
+    --color-mineshaft: #333;
     --align-center: center;
     --h1-resize: 2.5rem;
 }
 
 body {
     min-height: 100vh;
-    background-color: #333;
+    background-color: var(--color-mineshaft);
 }
 
 /* ==================
@@ -33,7 +34,7 @@ header {
 
 .header-grid {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -228,6 +229,7 @@ header {
 .portfolio-container {
     width: 70%;
     margin: 0 auto;
+    padding-top: 40px;
 }
 
 .portfolio-rows {
@@ -248,6 +250,8 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
+    background: var(--color-mineshaft);
+    margin-bottom: 4px;
 }
 
 .content-description h2 {
@@ -394,7 +398,7 @@ footer p {
     .portfolio-rows {
         display: grid;
         grid-template-columns: 1fr;
-        grid-gap: 15px;
+        grid-gap: 0px;
         margin: 20px auto;
     }
 
