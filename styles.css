@@ -232,7 +232,26 @@ header {
 
 .portfolio-rows {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.portfolio-image-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-rows .portfolio-content-card a {
+    padding: 1.5rem 2rem;
+}
+
+.portfolio-content-card {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-description h2 {
+    font-size: 2rem;
 }
 
 /* ==================
@@ -366,4 +385,21 @@ footer p {
         width: 70%;
         margin: 0 auto;
     }
+
+    .portfolio-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .portfolio-rows {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        margin: 20px auto;
+    }
+
+    .portfolio-image-card {
+        order: 1;
+    }
+
 }
