@@ -127,8 +127,8 @@ header {
     list-style: none;
 }
 
-.info-header ul li:nth-child(2) {
-    padding: 0 2rem;
+.info-header ul li:nth-child(even) {
+    padding: 0 1rem;
 }
 
 .info-header ul li a {
@@ -250,9 +250,10 @@ header {
 
 .portfolio-content-card .content-btn-link {
     padding: 1rem 2rem;
-    border: 2px solid var(--color--white);
+    /* border: 2px solid var(--color--white); */
     text-decoration: none;
     color: var(--color--white);
+    background-color: var(--color--smaltblue);
 }
 
 .portfolio-content-card {
@@ -268,6 +269,10 @@ header {
 
 .content-description h2 {
     font-size: 2rem;
+}
+
+.content-description p:first-of-type, .content-description p:nth-of-type(2) {
+    margin-top: 10px;
 }
 
 .github-title-logo {
@@ -288,8 +293,8 @@ header {
 }
 
 .content-btn .content-btn-link:hover {
-    background-color: var(--color--smaltblue);
-    color: var(--color-mineshaft);
+    background-color: var(--color--white);
+    color: var(--color--smaltblue);
     transition: 0.8s;
 }
 
