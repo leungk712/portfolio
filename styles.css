@@ -22,7 +22,7 @@ body {
 }
 
 /* ==================
-        Header
+   Header Section
    ================== */ 
 
 header {
@@ -63,6 +63,10 @@ header {
     color: var(--color-white);
 }
 
+.container {
+    width: 60%;
+}
+
 /* ==================
     Slanted Container 
    ================== */ 
@@ -97,12 +101,12 @@ header {
     color: var(--color--white);
 }
 
-/* .info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
+.info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
     animation-name: displayName;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     opacity: 0;
-} */
+}
 
 .info-header h1 {
     font-size: 6rem;
@@ -163,7 +167,7 @@ header {
    ================== */ 
 
 .skills {
-    margin-top: 60px;
+    margin: 60px 0 40px;
     text-align: var(--align-center);
     color: var(--color--white);
 }
@@ -181,7 +185,6 @@ header {
 }
 
 .icon-container {
-    width: 60%;
     margin: 0 auto;
 }
 
@@ -216,7 +219,6 @@ header {
    ================== */ 
 
 .portfolio {
-    margin-top: 40px;
     text-align: var(--align-center);
     color: var(--color--white);
     background-color: var(--color--smaltblue);
@@ -227,9 +229,8 @@ header {
 }
 
 .portfolio-container {
-    width: 70%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding: 40px 0;
 }
 
 .portfolio-rows {
@@ -237,13 +238,21 @@ header {
     grid-template-columns: repeat(2, 50%);
 }
 
+.portfolio-rows:first-of-type {
+    margin-top: 30px;
+}
+
 .portfolio-image-card img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
-.portfolio-rows .portfolio-content-card a {
-    padding: 1.5rem 2rem;
+.portfolio-content-card .content-btn-link {
+    padding: 1rem 2rem;
+    border: 2px solid var(--color--white);
+    text-decoration: none;
+    color: var(--color--white);
 }
 
 .portfolio-content-card {
@@ -251,19 +260,45 @@ header {
     align-items: center;
     justify-content: center;
     background: var(--color-mineshaft);
-    margin-bottom: 4px;
+}
+
+.content-description {
+    padding: 0 2rem;
 }
 
 .content-description h2 {
     font-size: 2rem;
 }
 
+.github-title-logo {
+    font-size: 1.5rem;
+    border: none;
+    padding-left: 0.5rem;
+    color: var(--color--white);
+}
+
+.github-title-logo:hover {
+    color: var(--color--smaltblue);
+    transition: 0.5s;
+}
+
+.content-btn {
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.content-btn .content-btn-link:hover {
+    background-color: var(--color--smaltblue);
+    color: var(--color-mineshaft);
+    transition: 0.8s;
+}
+
+
 /* ==================
     Education Section
    ================== */ 
 
 .education-container {
-    width: 75%;
     margin: 30px auto;
     color: var(--color--white);
 }
@@ -345,9 +380,22 @@ footer p {
    ================== */ 
 
 @media (max-width: 768px) {
+
+    /* ==================
+    Header Section
+   ================== */ 
+
+    .header-grid nav li {
+        padding: 0 0.5rem;
+    }
+
     .header-grid nav li a {
         font-size: 1rem;
     }
+
+    /* ==================
+    Slanted Container
+   ================== */ 
 
     .info-header h1 {
         font-size: 4rem;
@@ -377,6 +425,10 @@ footer p {
         border-bottom: none;
     }
 
+    /* ==================
+    Skills Section
+   ================== */ 
+
     .skills .code-icons {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -390,6 +442,10 @@ footer p {
         margin: 0 auto;
     }
 
+    /* ==================
+    Portfolio Section
+   ================== */ 
+
     .portfolio-container {
         width: 90%;
         margin: 0 auto;
@@ -402,8 +458,17 @@ footer p {
         margin: 20px auto;
     }
 
-    .portfolio-image-card {
+    .portfolio-content-card {
         order: 1;
+        height: 35vh;
     }
+
+    /* ==================
+    Education Section
+   ================== */ 
+
+   /* ==================
+    Footer Section
+   ================== */ 
 
 }

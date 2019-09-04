@@ -22,11 +22,13 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#">Education</a></li>
+                    <li><a href="#education">Education</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!--Slanted Container-->
 
     <div class="slanted-container">
         <div class="info-header">
@@ -34,7 +36,7 @@
             <p>Front-End Web Developer.</p>
             <ul class="fullscreen-bar-links">
                 <li><a title="Check out my LinkedIn!" href="https://www.linkedin.com/in/leungk712/" alt="LinkedIn" target="_blank"><i class="header-icon fab fa-linkedin"></i>  LinkedIn</a></li>
-                <li><a title="Check out my Github!" href="https://github.com/leungk712"><i class="header-icon fab fa-github-alt" target="_blank"></i> Github</a></li>
+                <li><a title="Check out my Github!" href="https://github.com/leungk712" target="_blank"><i class="header-icon fab fa-github-alt"></i> Github</a></li>
                 <li><a title="Check out my YouTube channel!" href="https://www.youtube.com/channel/UCB_XhBJJoQbnoX1DsmYk_Kg" target="_blank"><i class="header-icon fab fa-youtube"></i> YouTube</a></li>
                 <!-- Resume -->
             </ul>
@@ -46,11 +48,10 @@
             </ul>
         </div>
     </div>
-
-
+    
     <div id="skills" class="skills">
         <h1>Skills</h1>
-        <div class="icon-container">
+        <div class="container icon-container">
             <div class="code-icons icons">
                 <div class="icon-box">
                     <div class="icon-box-content">
@@ -105,7 +106,7 @@
     </div>
 
     <div id="portfolio" class="portfolio">
-        <div class="portfolio-container">
+        <div class="container portfolio-container">
             <h1>Portfolio</h1>
             <div class="portfolio-rows">
                 <div class="portfolio-image-card">
@@ -113,33 +114,124 @@
                 </div>
                 <div class="portfolio-content-card">
                     <div class="content-description">
-                        <h2>FoCo Pop!</h2>
-                        <p></p>
-                        <a href="#">Go to FoCo Pop!</a>
+                        <h2>FoCo Pop!
+                            <a class="github-title-logo" href="https://github.com/leungk712/focopop-node" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>The best popsicle shop in all of Colorado! Come, let's eat.</p>
+                        <p>HTML, CSS, Bootstrap 4, Node.js, Express.js, Mailchimp API</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://serene-coast-81295.herokuapp.com/" target="_blank">Off to FoCo Pop!</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="portfolio-rows">
                 <div class="portfolio-content-card">
                     <div class="content-description">
-                        <h2>Nutrition Website</h2>
-                        <p></p>
-                        <a href="#">Let's Learn!</a>
+                        <h2>Nutrition Website
+                            <a class="github-title-logo" href="https://github.com/leungk712/nutritionwebsite" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>As a Clinical Dietitian, it is a passion of mine to provide easy access to nutrition education. 
+                            From macronutrients to minerals and vitamins, this website aims to educate the world!</p>
+                        <p>HTML, CSS, Bootstrap 4, JavaScript</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://leungk712.github.io/nutritionwebsite/" target="_blank">Let's Learn!</a>
+                        </div>
                     </div>
                 </div>
                 <div class="portfolio-image-card">
                     <img src="imgs/strawberries.jpg">
                 </div>
             </div>
+            <div class="portfolio-rows">
+                <div class="portfolio-image-card">
+                    <img src="imgs/math.jpg">
+                </div>
+                <div class="portfolio-content-card">
+                    <div class="content-description">
+                        <h2>TPN Calculator
+                            <a class="github-title-logo" href="https://github.com/leungk712/tpncalculator" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>Helping provide a total parenteral nutrition calculator for Registered Dietitians to accurately calculate nutritional needs.</p>
+                        <p>HTML, CSS, Bootstrap 4, JavaScript</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://leungk712.github.io/tpncalculator/" target="_blank">Let's Calculate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-rows">
+                <div class="portfolio-content-card">
+                    <div class="content-description">
+                        <h2>Mandarin 8
+                            <a class="github-title-logo" href="https://github.com/leungk712/Mandarin8" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>Mandarin 8, a 3-Michelin-star restaurant located in Las Vegas.</p>
+                        <p>HTML, CSS, JavaScript</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://leungk712.github.io/Mandarin8/" target="_blank">Let's eat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-image-card">
+                    <img src="imgs/chineselanterns.jpg">
+                </div>
+            </div>
+            <div class="portfolio-rows">
+                <div class="portfolio-image-card">
+                    <img src="imgs/colorado-mountains.jpg">
+                </div>
+                <div class="portfolio-content-card">
+                    <div class="content-description">
+                        <h2>Visit Colorado
+                            <a class="github-title-logo" href="https://github.com/leungk712/visitcolorado" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>Colorado's official state tourism website.</p>
+                        <p>HTML, CSS, Bootstrap 4, JavaScript, Weather API</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://leungk712.github.io/visitcolorado/" target="_blank">Let's explore!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-rows">
+                <div class="portfolio-content-card">
+                    <div class="content-description">
+                        <h2>YelpCamp!
+                            <a class="github-title-logo" href="https://github.com/leungk712/YelpCampKL" target="_blank"  title="View code on Github!">
+                                <i class="fab fa-github github-btn"></i>
+                            </a>
+                        </h2>
+                        <p>YelpCamp! Find your campsite today!</p>
+                        <p>HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Google Maps API</p>
+                        <div class="content-btn">
+                            <a class="content-btn-link" href="https://shielded-thicket-88545.herokuapp.com/" target="_blank">Let's camp!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-image-card">
+                    <img src="imgs/camping.jpg">
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="education">
-        <div class="education-container">
+    <div id="education" class="education">
+        <div class="container education-container">
             <h1>Education & Resources</h1>
             <ul>
-                <li>Colt Steele's Web Developer Bootcamp</li>
-                <li>Angela Yu's Web Developer Bootcamp </li>
+                <li>Colt Steele's Web Developer Bootcamp / Completed <!-- Add Certification icon--></li>
+                <li>Angela Yu's Web Developer Bootcamp / In Progress <!-- Add Certification icon--> </li>
                 <li>Colorado State University / Bachelor of Science</li>
                 <li>Johnson & Wales University / Associate of Art</li>
             </ul>
