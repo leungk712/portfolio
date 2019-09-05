@@ -521,8 +521,12 @@ Portfolio Section
 Education Section
 ================== */ 
 
-.education-container h1 {
-    font-size: 1.5rem;
+.education-container ul {
+    display: block;
+}
+
+.education-container ul li {
+    padding: 0.5rem 0;
 }
 
 /* ==================
