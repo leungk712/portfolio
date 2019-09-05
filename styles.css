@@ -20,6 +20,22 @@
 body {
     min-height: 100vh;
     background-color: var(--color-mineshaft);
+    animation-name: displayName;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* Animation */ 
+
+@keyframes displayName {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* ==================
@@ -102,13 +118,6 @@ header {
     color: var(--color--white);
 }
 
-.info-header h1, .info-header p, .info-header ul, .skills, .portfolio {
-    animation-name: displayName;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-}
-
 .info-header h1 {
     font-size: 6rem;
 }
@@ -145,22 +154,6 @@ header {
 
 .info-header .mobile-bar-links {
     display: none;
-}
-
-/* Animation */ 
-
-@keyframes displayName {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: .5;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 /* ==================
@@ -317,6 +310,11 @@ header {
 .education-container ul li {
     list-style: none;
     line-height: 1.5;
+}
+
+.education-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .fa-file-pdf {
