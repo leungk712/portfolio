@@ -511,16 +511,28 @@ Portfolio Section
 }
 
 .portfolio-content-card {
+    height: 45vh;
     order: 1;
-    height: 40vh;
+}
+
+.content-description h2 {
+    font-size: 1.5rem;
 }
 
 /* ==================
 Education Section
 ================== */ 
 
+.education-container h1 {
+    font-size: 1.5rem;
+}
+
 /* ==================
 Footer Section
 ================== */ 
+
+.footer-contact-icons ul li {
+    padding: 0.25rem;
+}
 
 }
