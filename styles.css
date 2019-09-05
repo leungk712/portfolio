@@ -14,6 +14,7 @@
     --color-mineshaft: #333;
     --align-center: center;
     --h1-resize: 2.5rem;
+    --margin-center: 0 auto;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 header {
     height: 6vh;
     width: 80%;
-    margin: 0 auto;
+    margin: var(--margin-center);
     color: #fff;
 }
 
@@ -185,7 +186,7 @@ header {
 }
 
 .icon-container {
-    margin: 0 auto;
+    margin: var(--margin-center);
 }
 
 .icon-box {
@@ -229,7 +230,7 @@ header {
 }
 
 .portfolio-container {
-    margin: 0 auto;
+    margin: var(--margin-center);
     padding: 40px 0;
 }
 
@@ -328,10 +329,12 @@ header {
 
 footer {
     text-align: var(--align-center);
-    height: 6vh;
+    height: 12vh;
     color: var(--color--white);
-    width: 60%;
-    margin: 0 auto;
+}
+
+footer .container {
+    margin: var(--margin-center);
 }
 
 .footer-contact-icons ul {
@@ -350,6 +353,10 @@ footer {
     background-color:var(--color-mineshaft);
     border: 1px solid #fff;
     padding: 1rem;
+}
+
+.footer-icon:hover {
+    transform: scale(1.05);
 }
 
 /* ==================
@@ -409,7 +416,7 @@ footer {
 }
 
 .fa-address-card {
-    color: #fff;
+    color: mediumpurple;
 }
 
 .fa-medium-m {
@@ -426,94 +433,94 @@ i.footer-icon.fa-github-alt {
 
 @media (max-width: 768px) {
 
-    /* ==================
-    Header Section
-   ================== */ 
+/* ==================
+Header Section
+================== */ 
 
-    .header-grid nav li {
-        padding: 0 0.5rem;
-    }
+.header-grid nav li {
+    padding: 0 0.5rem;
+}
 
-    .header-grid nav li a {
-        font-size: 1rem;
-    }
+.header-grid nav li a {
+    font-size: 1rem;
+}
 
-    /* ==================
-    Slanted Container
-   ================== */ 
+/* ==================
+Slanted Container
+================== */ 
 
-    .info-header h1 {
-        font-size: 4rem;
-    }
-    
-    .info-header p {
-        font-size: 1.25rem;
-    }
+.info-header h1 {
+    font-size: 4rem;
+}
 
-    .info-header .fullscreen-bar-links {
-        display: none;
-    }
+.info-header p {
+    font-size: 1.25rem;
+}
 
-    .info-header .mobile-bar-links {
-        display: flex;
-    }
+.info-header .fullscreen-bar-links {
+    display: none;
+}
 
-    .info-header ul li:nth-child(even)  {
-        padding: 0 0.5rem;
-    }
+.info-header .mobile-bar-links {
+    display: flex;
+}
 
-    .info-header .mobile-bar-links a {
-        font-size: 1.5rem;
-    }
+.info-header ul li:nth-child(even)  {
+    padding: 0 0.5rem;
+}
 
-    .info-header ul li a:hover {
-        border-bottom: none;
-    }
+.info-header .mobile-bar-links a {
+    font-size: 1.5rem;
+}
 
-    /* ==================
-    Skills Section
-   ================== */ 
+.info-header ul li a:hover {
+    border-bottom: none;
+}
 
-    .skills .code-icons {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-gap: 5px;
-        margin-top: 30px;
-    }
+/* ==================
+Skills Section
+================== */ 
 
-    .icon-container {
-        width: 70%;
-        margin: 0 auto;
-    }
+.skills .code-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-top: 30px;
+}
 
-    /* ==================
-    Portfolio Section
-   ================== */ 
+.icon-container {
+    width: 70%;
+    margin: 0 auto;
+}
 
-    .portfolio-container {
-        width: 90%;
-        margin: 0 auto;
-    }
+/* ==================
+Portfolio Section
+================== */ 
 
-    .portfolio-rows {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 0px;
-        margin: 20px auto;
-    }
+.portfolio-container {
+    width: 90%;
+    margin: 0 auto;
+}
 
-    .portfolio-content-card {
-        order: 1;
-        height: 40vh;
-    }
+.portfolio-rows {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    margin: 20px auto;
+}
 
-    /* ==================
-    Education Section
-   ================== */ 
+.portfolio-content-card {
+    order: 1;
+    height: 40vh;
+}
 
-   /* ==================
-    Footer Section
-   ================== */ 
+/* ==================
+Education Section
+================== */ 
+
+/* ==================
+Footer Section
+================== */ 
 
 }
