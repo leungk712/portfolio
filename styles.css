@@ -427,6 +427,16 @@ i.footer-icon.fa-github-alt {
     Media Queries
    ================== */ 
 
+@media (min-width: 769px) and (max-width: 1200px) {
+    .info-header h1 {
+        font-size: 4rem;
+    }
+    
+    .info-header p {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
 
 /* ==================
@@ -446,7 +456,7 @@ Slanted Container
 ================== */ 
 
 .info-header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .info-header p {
