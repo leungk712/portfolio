@@ -32,36 +32,36 @@ header {
     height: 6vh;
     width: 80%;
     color: $color-white;
-}
 
-.header-grid {
-    @include flex(center, center);
-    margin-top: 20px;
-}
+    .header-grid {
+        @include flex(center, center);
+        margin-top: 20px;
+    }
 
-.logo {
-    cursor: pointer;
-}
+    .logo {
+        cursor: pointer;
+    }
 
-.header-grid nav ul {
-    list-style: none;
-}
+    .header-grid nav ul {
+        list-style: none;
 
-.header-grid nav li {
-    padding: 0 1rem;
-    display: inline-block;
-}
+        .header-grid nav li {
+            padding: 0 1rem;
+            display: inline-block;
 
-.header-grid nav li:hover {
-    padding-bottom: .5rem;
-    border-bottom: 3px solid $color-white;
-    color: $color-smaltblue;
-}
+            .header-grid nav li:hover {
+                padding-bottom: .5rem;
+                border-bottom: 3px solid $color-white;
+                color: $color-smaltblue;
 
-.header-grid nav li a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    color: $color-white;
+                .header-grid nav li a {
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                    color: $color-white;
+                }
+            }
+        }
+    }
 }
 
 .container {
@@ -146,18 +146,18 @@ header {
     margin: 60px 0 40px;
     text-align: $align-center;
     color: $color-white;
-}
 
-.skills h1 {
-    font-size: $h1-resize;
-}
+    .skills h1 {
+        font-size: $h1-resize;
+    }
 
-.skills .code-icons {
-    @include grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 25px;
-    margin-top: 30px;
+    .skills .code-icons {
+        @include grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 25px;
+        margin-top: 30px;
+    }
 }
 
 .icon-container {
