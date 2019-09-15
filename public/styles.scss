@@ -100,42 +100,42 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: $color-white;
-}
 
-.info-header h1 {
-    font-size: 6rem;
-}
+    .info-header h1 {
+        font-size: 6rem;
+    }
 
-.info-header p {
-    font-size: 2rem;
-}
+    .info-header p {
+        font-size: 2rem;
+    }
 
-.info-header ul {
-    margin-top: 10px;
-    @include flex(center, start)
-}
+    .info-header ul {
+        margin-top: 10px;
+        @include flex(center, start);
 
-.info-header ul li {
-    list-style: none;
-}
+        .info-header ul li {
+            list-style: none;
 
-.info-header ul li:nth-child(even) {
-    padding: 0 1rem;
-}
+            .info-header ul li:nth-child(even) {
+                padding: 0 1rem;
 
-.info-header ul li a {
-    text-decoration: none;
-    padding: 0rem;
-    color: $color-white;
-    font-size: 1.25rem;
-}
+                .info-header ul li a {
+                    text-decoration: none;
+                    padding: 0rem;
+                    color: $color-white;
+                    font-size: 1.25rem;
 
-.info-header ul li a:hover {
-    border-bottom: 3px solid $color-white;
-}
+                    .info-header ul li a:hover {
+                        border-bottom: 3px solid $color-white;
 
-.info-header .mobile-bar-links {
-    display: none;
+                        .info-header .mobile-bar-links {
+                            display: none;
+                        }
+                    }
+                }
+            } 
+        }
+    }
 }
 
 /* ==================
@@ -162,33 +162,34 @@ header {
 
 .icon-container {
     @include marginCenter;
+
+    .icon-box {
+        border: 2px solid $color-white;
+        width: 100%;
+        height: 100%;
+    
+        .icon-box:hover {
+            transform: scale(1.05);
+    
+            .icon-box i {
+                font-size: 4rem;
+    
+                .icon-box-content {
+                    padding: 1.5rem;
+    
+                    .icon-box-content p {
+                        font-weight: bold;
+    
+                        .icon-box-content i {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.icon-box {
-    border: 2px solid $color-white;
-    width: 100%;
-    height: 100%;
-}
-
-.icon-box:hover {
-    transform: scale(1.05);
-}
-
-.icon-box i {
-    font-size: 4rem;
-}
-
-.icon-box-content {
-    padding: 1.5rem;
-}
-
-.icon-box-content p {
-    font-weight: bold;
-}
-
-.icon-box-content i {
-    margin-top: 1rem;
-}
 
 /* ==================
     Projects Section
@@ -279,22 +280,23 @@ header {
 .education-container {
     margin: 30px auto;
     color: $color-white;
+
+    .education-container h1 {
+        text-align: $align-center;
+        margin-bottom: 1rem;
+    }
+
+    .education-container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .education-container ul li {
+            list-style: none;
+            line-height: 1.5;
+        }
+    }
 }
 
-.education-container h1 {
-    text-align: $align-center;
-    margin-bottom: 1rem;
-}
-
-.education-container ul li {
-    list-style: none;
-    line-height: 1.5;
-}
-
-.education-container ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
 .fa-file-pdf {
     padding-left: 0.5rem;
@@ -308,30 +310,30 @@ footer {
     text-align: $align-center;
     height: 12vh;
     color: $color-white;
-}
 
-footer .container {
-    @include marginCenter;
-}
+    footer .container {
+        @include marginCenter;
 
-.footer-contact-icons ul {
-    @include flex(center, center);
-}
-
-.footer-contact-icons ul li {
-    list-style: none;
-    padding: 1rem;
-}
-
-.footer-icon {
-    font-size: 1.5rem;
-    background-color: $color-mineshaft;
-    border: 1px solid $color-white;
-    padding: 1rem;
-}
-
-.footer-icon:hover {
-    transform: scale(1.05);
+        .footer-contact-icons ul {
+            @include flex(center, center);
+        
+            .footer-contact-icons ul li {
+                list-style: none;
+                padding: 1rem;
+        
+                .footer-icon {
+                    font-size: 1.5rem;
+                    background-color: $color-mineshaft;
+                    border: 1px solid $color-white;
+                    padding: 1rem;
+        
+                    .footer-icon:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* ==================
