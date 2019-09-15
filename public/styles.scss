@@ -1,18 +1,10 @@
 @import './resets';
 @import './icons';
-
-:root {
-    --color--smaltblue: #537d91; 
-    --color--white: #fff;
-    --color-mineshaft: #333;
-    --align-center: center;
-    --h1-resize: 2.5rem;
-    --margin-center: 0 auto;
-}
+@import './variables';
 
 body {
     min-height: 100vh;
-    background-color: var(--color-mineshaft);
+    background-color: $color-mineshaft;
     animation-name: displayContent;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -36,15 +28,14 @@ body {
    ================== */ 
 
 header {
+    @include marginCenter;
     height: 6vh;
     width: 80%;
-    margin: var(--margin-center);
-    color: var(--color--white);
+    color: $color-white;
 }
 
 .header-grid {
-    display: flex;
-    justify-content: center;
+    @include flex(center, center);
     margin-top: 20px;
 }
 
@@ -63,14 +54,14 @@ header {
 
 .header-grid nav li:hover {
     padding-bottom: .5rem;
-    border-bottom: 3px solid var(--color--white);
-    color: var(--color--smaltblue);
+    border-bottom: 3px solid $color-white;
+    color: $color-smaltblue;
 }
 
 .header-grid nav li a {
     text-decoration: none;
     font-size: 1.25rem;
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .container {
@@ -85,7 +76,7 @@ header {
     position: relative;
     width: 100%;
     height: 50vh;
-    background-color: #537d91;
+    background-color: $color-smaltblue;
 }
 
 .slanted-container:after {
@@ -108,7 +99,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--color--white);
+    color: $color-white;
 }
 
 .info-header h1 {
@@ -121,9 +112,7 @@ header {
 
 .info-header ul {
     margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    @include flex(center, start)
 }
 
 .info-header ul li {
@@ -137,12 +126,12 @@ header {
 .info-header ul li a {
     text-decoration: none;
     padding: 0rem;
-    color: var(--color--white);
+    color: $color-white;
     font-size: 1.25rem;
 }
 
 .info-header ul li a:hover {
-    border-bottom: 3px solid var(--color--white);
+    border-bottom: 3px solid $color-white;
 }
 
 .info-header .mobile-bar-links {
@@ -155,16 +144,16 @@ header {
 
 .skills {
     margin: 60px 0 40px;
-    text-align: var(--align-center);
-    color: var(--color--white);
+    text-align: $align-center;
+    color: $color-white;
 }
 
 .skills h1 {
-    font-size: var(--h1-resize);
+    font-size: $h1-resize;
 }
 
 .skills .code-icons {
-    display: grid;
+    @include grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 25px;
@@ -172,11 +161,11 @@ header {
 }
 
 .icon-container {
-    margin: var(--margin-center);
+    @include marginCenter;
 }
 
 .icon-box {
-    border: 2px solid var(--color--white);
+    border: 2px solid $color-white;
     width: 100%;
     height: 100%;
 }
@@ -206,17 +195,17 @@ header {
    ================== */ 
 
 .portfolio {
-    text-align: var(--align-center);
-    color: var(--color--white);
-    background-color: var(--color--smaltblue);
+    text-align: $align-center;
+    color: $color-white;
+    background-color: $color-smaltblue;
 }
 
 .portfolio h1 {
-    font-size: var(--h1-resize);
+    font-size: $h1-resize;
 }
 
 .portfolio-container {
-    margin: var(--margin-center);
+    @include marginCenter;
     padding: 40px 0;
 }
 
@@ -238,15 +227,13 @@ header {
 .portfolio-content-card .content-btn-link {
     padding: 1rem 2rem;
     text-decoration: none;
-    color: var(--color--white);
-    background-color: var(--color--smaltblue);
+    color: $color-white;
+    background-color: $color-smaltblue;
 }
 
 .portfolio-content-card {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-mineshaft);
+    @include grid;
+    background-color: $color-mineshaft;
 }
 
 .content-description {
@@ -265,11 +252,11 @@ header {
     font-size: 1.5rem;
     border: none;
     padding-left: 0.5rem;
-    color: var(--color--white);
+    color: $color-white;
 }
 
 .github-title-logo:hover {
-    color: var(--color--smaltblue);
+    color: $color-smaltblue;
     transition: 0.5s;
 }
 
@@ -279,8 +266,8 @@ header {
 }
 
 .content-btn .content-btn-link:hover {
-    background-color: var(--color--white);
-    color: var(--color--smaltblue);
+    background-color: $color-white;
+    color: $color-smaltblue;
     transition: 0.8s;
 }
 
@@ -291,11 +278,11 @@ header {
 
 .education-container {
     margin: 30px auto;
-    color: var(--color--white);
+    color: $color-white;
 }
 
 .education-container h1 {
-    text-align: var(--align-center);
+    text-align: $align-center;
     margin-bottom: 1rem;
 }
 
@@ -318,19 +305,17 @@ header {
    ================== */ 
 
 footer {
-    text-align: var(--align-center);
+    text-align: $align-center;
     height: 12vh;
-    color: var(--color--white);
+    color: $color-white;
 }
 
 footer .container {
-    margin: var(--margin-center);
+    @include marginCenter;
 }
 
 .footer-contact-icons ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center);
 }
 
 .footer-contact-icons ul li {
@@ -340,8 +325,8 @@ footer .container {
 
 .footer-icon {
     font-size: 1.5rem;
-    background-color:var(--color-mineshaft);
-    border: 1px solid var(--color--white);
+    background-color: $color-mineshaft;
+    border: 1px solid $color-white;
     padding: 1rem;
 }
 
@@ -355,126 +340,125 @@ footer .container {
 
 @media (min-width: 769px) and (max-width: 1200px) {
     
-/* ==================
-Slanted Container
-================== */ 
+    /* ==================
+    Slanted Container
+    ================== */ 
 
-.info-header h1 {
-    font-size: 4rem;
-}
+    .info-header h1 {
+        font-size: 4rem;
+    }
 
-.info-header p {
-    font-size: 1.5rem;
-}
+    .info-header p {
+        font-size: 1.5rem;
+    }
 
 }
 
 @media (max-width: 768px) {
 
-/* ==================
-Header Section
-================== */ 
+    /* ==================
+    Header Section
+    ================== */ 
 
-.header-grid nav li {
-    padding: 0 0.5rem;
-}
+    .header-grid nav li {
+        padding: 0 0.5rem;
+    }
 
-.header-grid nav li a {
-    font-size: 1rem;
-}
+    .header-grid nav li a {
+        font-size: 1rem;
+    }
 
-/* ==================
-Slanted Container
-================== */ 
+    /* ==================
+    Slanted Container
+    ================== */ 
 
-.info-header h1 {
-    font-size: 3rem;
-}
+    .info-header h1 {
+        font-size: 3rem;
+    }
 
-.info-header p {
-    font-size: 1.25rem;
-}
+    .info-header p {
+        font-size: 1.25rem;
+    }
 
-.info-header .fullscreen-bar-links {
-    display: none;
-}
+    .info-header .fullscreen-bar-links {
+        display: none;
+    }
 
-.info-header .mobile-bar-links {
-    display: flex;
-}
+    .info-header .mobile-bar-links {
+        display: flex;
+    }
 
-.info-header ul li:nth-child(even)  {
-    padding: 0 0.5rem;
-}
+    .info-header ul li:nth-child(even)  {
+        padding: 0 0.5rem;
+    }
 
-.info-header .mobile-bar-links a {
-    font-size: 1.5rem;
-}
+    .info-header .mobile-bar-links a {
+        font-size: 1.5rem;
+    }
 
-.info-header ul li a:hover {
-    border-bottom: none;
-}
+    .info-header ul li a:hover {
+        border-bottom: none;
+    }
 
-/* ==================
-Skills Section
-================== */ 
+    /* ==================
+    Skills Section
+    ================== */ 
 
-.skills .code-icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 5px;
-    margin-top: 30px;
-}
+    .skills .code-icons {
+        @include grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px;
+        margin-top: 30px;
+    }
 
-.icon-container {
-    width: 70%;
-    margin: 0 auto;
-}
+    .icon-container {
+        @include marginCenter;
+        width: 70%;
+    }
 
-/* ==================
-Portfolio Section
-================== */ 
+    /* ==================
+    Portfolio Section
+    ================== */ 
 
-.portfolio-container {
-    width: 90%;
-    margin: 0 auto;
-}
+    .portfolio-container {
+        @include marginCenter;
+        width: 90%;
+    }
 
-.portfolio-rows {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0px;
-    margin: 20px auto;
-}
+    .portfolio-rows {
+        @include grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+        margin: 20px auto;
+    }
 
-.portfolio-content-card {
-    height: 45vh;
-    order: 1;
-}
+    .portfolio-content-card {
+        height: 45vh;
+        order: 1;
+    }
 
-.content-description h2 {
-    font-size: 1.5rem;
-}
+    .content-description h2 {
+        font-size: 1.5rem;
+    }
 
-/* ==================
-Education Section
-================== */ 
+    /* ==================
+    Education Section
+    ================== */ 
 
-.education-container ul {
-    display: block;
-}
+    .education-container ul {
+        display: block;
+    }
 
-.education-container ul li {
-    padding: 0.5rem 0;
-}
+    .education-container ul li {
+        padding: 0.5rem 0;
+    }
 
-/* ==================
-Footer Section
-================== */ 
+    /* ==================
+    Footer Section
+    ================== */ 
 
-.footer-contact-icons ul li {
-    padding: 0.25rem;
-}
-
+    .footer-contact-icons ul li {
+        padding: 0.25rem;
+    }
 }

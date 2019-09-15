@@ -465,8 +465,8 @@ footer .container {
    ================== */
 @media (min-width: 769px) and (max-width: 1200px) {
   /* ==================
-Slanted Container
-================== */
+    Slanted Container
+    ================== */
   .info-header h1 {
     font-size: 4rem;
   }
@@ -477,8 +477,8 @@ Slanted Container
 
 @media (max-width: 768px) {
   /* ==================
-Header Section
-================== */
+    Header Section
+    ================== */
   .header-grid nav li {
     padding: 0 0.5rem;
   }
@@ -486,8 +486,8 @@ Header Section
     font-size: 1rem;
   }
   /* ==================
-Slanted Container
-================== */
+    Slanted Container
+    ================== */
   .info-header h1 {
     font-size: 3rem;
   }
@@ -512,8 +512,8 @@ Slanted Container
     border-bottom: none;
   }
   /* ==================
-Skills Section
-================== */
+    Skills Section
+    ================== */
   .skills .code-icons {
     display: -ms-grid;
     display: grid;
@@ -529,8 +529,8 @@ Skills Section
     margin: 0 auto;
   }
   /* ==================
-Portfolio Section
-================== */
+    Portfolio Section
+    ================== */
   .portfolio-container {
     width: 90%;
     margin: 0 auto;
@@ -553,8 +553,8 @@ Portfolio Section
     font-size: 1.5rem;
   }
   /* ==================
-Education Section
-================== */
+    Education Section
+    ================== */
   .education-container ul {
     display: block;
   }
@@ -562,8 +562,8 @@ Education Section
     padding: 0.5rem 0;
   }
   /* ==================
-Footer Section
-================== */
+    Footer Section
+    ================== */
   .footer-contact-icons ul li {
     padding: 0.25rem;
   }
